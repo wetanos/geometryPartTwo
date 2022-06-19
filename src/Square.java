@@ -6,7 +6,7 @@ public class Square extends Figures {
     }
 
     @Override
-    public int perimeter() {
-        return (getSideA() * 4);
+    public double perimeter() {
+        return (getSideAOrRadius() * 4);
     }
 }

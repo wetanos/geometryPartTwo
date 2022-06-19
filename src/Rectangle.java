@@ -5,8 +5,8 @@ public class Rectangle extends Figures {
     }
 
     @Override
-    public int perimeter() {
-        return ((getSideA() + getSideB()) * 2);
+    public double perimeter() {
+        return ((getSideAOrRadius() + getSideB()) * 2);
     }
 
 }

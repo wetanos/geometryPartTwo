@@ -5,7 +5,7 @@ public class Triangle extends Figures{
     }
 
     @Override
-    public int perimeter() {
-        return (getSideA() + getSideB() + getSideC());
+    public double perimeter() {
+        return (getSideAOrRadius() + getSideB() + getSideC());
     }
 }

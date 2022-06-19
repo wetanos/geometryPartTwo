@@ -1,29 +1,29 @@
 public abstract class Figures implements Computable {
-    private int sideA;
+    private int sideAOrRadius;
     private int sideB;
     private int sideC;
     private String figureType;
 
     public Figures(int sideA) {
-        this.sideA = sideA;
+        this.sideAOrRadius = sideA;
     }
 
     public Figures(int sideA, int sideB) {
-        this.sideA = sideA;
+        this.sideAOrRadius = sideA;
         this.sideB = sideB;
     }
     public Figures(int sideA, int sideB, int sideC) {
-        this.sideA = sideA;
+        this.sideAOrRadius = sideA;
         this.sideB = sideB;
         this.sideC = sideC;
     }
 
-    public int getSideA() {
-        return sideA;
+    public int getSideAOrRadius() {
+        return sideAOrRadius;
     }
 
-    public void setSideA(int sideA) {
-        this.sideA = sideA;
+    public void setSideAOrRadius(int sideAOrRadius) {
+        this.sideAOrRadius = sideAOrRadius;
     }
 
     public int getSideB() {
@@ -52,9 +52,8 @@ public abstract class Figures implements Computable {
 
     @Override
     public void squareResult() {
-        Computable.super.squareResult(sideA, sideB, sideC, figureType);
+        Computable.super.squareResult(sideAOrRadius, sideB, sideC, figureType);
     }
 
-    public abstract int perimeter();
-
+    public abstract double perimeter();
 }

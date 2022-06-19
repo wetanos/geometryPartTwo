@@ -7,8 +7,12 @@ public class Main {
         rectangle.squareResult();
         Triangle triangle = new Triangle(5, 4, 6);
         triangle.squareResult();
+        Circle circle = new Circle(4);
+        circle.squareResult();
         System.out.println("-------Часть 2-------");
         System.out.println("Периметр квадрата равен: " + square.perimeter());
         System.out.println("Периметр прямоугольника равен: " + rectangle.perimeter());
-        System.out.println("Периметр треугольника равен: " + triangle.perimeter());}
+        System.out.println("Периметр треугольника равен: " + triangle.perimeter());
+        System.out.println("Периметр круга равен: " +  circle.perimeter());
+    }
 }
